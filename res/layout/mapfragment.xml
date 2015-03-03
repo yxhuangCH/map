@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:yxh="http://schemas.android.com/apk/res/com.yxh.googlemap"  
+       xmlns:tools="http://schemas.android.com/tools"
+       android:id="@+id/main"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:context="com.yxh.googlemap.MainActivity" >
+ 
+       <!-- 地图界面 -->
+	  	<fragment
+	  	    android:id="@+id/map"
+	  	    android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	  	    class="com.google.android.gms.maps.MapFragment" />
+
+
+    	<LinearLayout
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal" >
+    	  	
+
+    		<TextView
+    		    android:id="@+id/displayProjectName"
+    		    android:layout_width="120dp"
+    		    android:layout_height="wrap_content"
+    		    android:lines="1"
+    		    android:maxLength="10"
+    		    android:text="@string/displayProjectName"
+    		    android:textSize="8pt" />
+
+    	    <Button
+    	        android:id="@+id/NormalMapButton"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:onClick="NormolView"
+    	        android:text="@string/NromoMapButton" />
+
+    	    <Button
+    	        android:id="@+id/SatelliteMapButton"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:onClick="Satellite"
+    	        android:text="@string/SatelliteMapButton" />
+    	</LinearLayout>
+
+    <!-- 地图底部的按钮 -->
+    <LinearLayout
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="bottom"
+    	    android:orientation="horizontal" >
+   	<Button
+  		    android:id="@+id/addMarker"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:onClick="clickAddMarker"
+  		    android:text="@string/addMarker" />	
+
+   	<Button
+  		    android:id="@+id/endMap"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:onClick="clickEndMap"
+  		    android:text="@string/endMap"/>
+     </LinearLayout>
+     
+    <!-- 显示地图中心的十字架 -->
+     <LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:gravity="center">
+
+  		<com.yxh.googlemap.CrossView
+	        android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content" 
+            yxh:lineWidth="2dp"  
+            yxh:lineColor="#000000"/>
+  	</LinearLayout>
+  	
+</FrameLayout>

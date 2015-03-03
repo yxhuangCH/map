@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yxh.googlemap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <!-- 增加一些许可权限 -->
+     <uses-permission 
+         android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+     <permission
+          android:name="com.yxh.googlemap.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>      
+     <uses-permission android:name="com.yxh.googlemap.permission.MAPS_RECEIVE" />		
+      
+        <uses-permission android:name="android.permission.INTERNET"/>	
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		
+		<!-- 写SD卡 google地图会往SD卡上写缓存数据-->
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+			
+		<!-- OpenGL ES V2特性支持 -->
+		<uses-feature 
+			  android:glEsVersion="0x00020000" 
+			  android:required="true"/>
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 启动新工程界面 -->
+        <activity
+            android:name=".NewProjectActivity">
+         </activity>
+         
+         <!-- 启动查看旧工程界面 -->
+         <activity
+            android:name=".OldProjectActivity">
+         </activity>
+         
+         <!-- 启动地图界面, 启动模式为singleTask -->
+         <activity
+            android:name=".MapFragmentActivity" 
+            android:launchMode="singleTask">
+         </activity>
+         
+         <!-- 启动Marker列表界面-->
+         <activity
+            android:name=".MarkerPagerActivity" >
+         </activity>
+         
+              <!-- 启动SingleFragmentActivity列表界面-->
+         <activity
+            android:name=".SingleFragmentActivity" >
+         </activity>
+         
+         
+         <!-- Google map key -->
+        <meta-data
+		    android:name="com.google.android.maps.v2.API_KEY"	  
+		    android:value="AIzaSyDcA3Z3dQR9HbUXQubtiIm2QVCW37IZ_DQ" /> 
+        <!-- 
+         android:value="AIzaSyBiFLl0CK2tePI4i5BVno6LXBEM36tknfw"/>
+        android:value="AIzaSyCoclP2wtBJNa4K-qBEHAMi3QhsN2GSb84 ANDROID"/>
+         -->
+         <meta-data   
+          android:name="com.google.android.gms.version"  
+          android:value="@integer/google_play_services_version"/>  
+      
+         <!-- 增加后台服务 -->
+         <service android:name=".MapLocationService"></service>
+        
+    </application>
+
+</manifest>

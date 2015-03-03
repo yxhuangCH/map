@@ -1,0 +1,57 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical" 
+    tools:context="com.yxh.googlemap.MainActivity" >
+
+    
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" 
+         android:layout_marginTop="10dp"
+         android:gravity="center"
+          android:orientation="horizontal" >
+         <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="15pt"
+         android:text="@string/gps_status"/>
+         <TextView
+         android:id="@+id/gpsStatues"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="12pt"
+         android:text="@string/gpsStatues"/>
+
+     </LinearLayout>
+     
+
+
+     <Button
+         android:id="@+id/startNewProj"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/startNewProj"
+         android:layout_gravity="center_horizontal"/>
+
+     <Button
+         android:id="@+id/oldProj"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/oldProj"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="50dp"/>
+     
+     
+     <Button
+         android:id="@+id/log_in"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/log_in"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="50dp"/>
+
+   
+    </LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_projection_tips"
+        android:layout_marginTop="20dp"
+        android:textSize="10pt"
+        android:layout_gravity="center_horizontal"/>
+        
+    <!-- 工程名称 -->
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="8pt"
+        android:text="@string/new_name" />
+     <EditText
+        android:id="@+id/new_projeciton_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ednew_projection_name"/>
+   
+    <!-- 工程描述-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textSize="8pt"
+        android:text="@string/desnewproject" />
+    <EditText
+        android:id="@+id/new_projec_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:hint="@string/ednewprojec"
+        android:lines="3"/>
+
+    <!-- 确定和取消按钮 -->
+    <Button
+        android:id="@+id/new_project_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newpojectok"/>
+    
+    <Button
+        android:id="@+id/new_project_concel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newprojectconcel" />
+
+</LinearLayout>

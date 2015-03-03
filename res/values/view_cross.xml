@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>     
+    <declare-styleable name="CrossView">  
+        <attr name="lineWidth" format="dimension"></attr>  
+        <attr name="lineLength" format="dimension"></attr>  
+        <attr name="lineColor" format="color"></attr>  
+    </declare-styleable>  
+</resources>

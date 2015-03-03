@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  
+    <!-- 界面页眉上的控件 -->
+   <RelativeLayout 
+       android:id="@+id/ab_lv"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+         <Button
+            android:id="@+id/oldProjectActivityReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/oldProjectActivityReturn" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true" 
+            android:text="@string/oldProjectActivityTitle"
+            android:textColor="#0099cc"
+            android:textSize="23sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAllProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:checked="true"
+            android:text="@string/oldProjectActivityCheckBox" />
+     
+    </RelativeLayout>
+    
+      <!-- 界面页脚上的控件 -->
+          <Button
+              android:id="@+id/oldProjectActivity_post"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:text="@string/oldProjectActivity_post" />
+
+          <Button
+              android:id="@+id/oldProjectActivity_delete"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentRight="true"
+              android:text="@string/oldProjectActivity_delete" />
+
+      
+    <ListView
+        android:id="@+id/lv_allProject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/ab_lv"
+        android:layout_above="@id/oldProjectActivity_post">
+    </ListView>
+ 
+</RelativeLayout>
+
