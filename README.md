@@ -14,18 +14,14 @@
    
    5.弹出Spiner列表，为点选择属性；
    ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-47-39.png)
-     
-    6.对整个线路工程是否选择；
-    ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-47-39.png)
-      
-      7.工程列表自定义ListView;
-      ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-50-49.png)
-        
-	8.点击工程列表的Item进入每个工程的详细列表，并且利用ViewPager在工程中切换；
-	![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-51-20.png)
-	  
-	  9.长按工程列表的Item,可弹出Fragment,选择删除工程；
-	  ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-51-46.png)
+   6.对整个线路工程是否选择；
+   ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-47-39.png)
+   7.工程列表自定义ListView;
+   ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-50-49.png)
+   8.点击工程列表的Item进入每个工程的详细列表，并且利用ViewPager在工程中切换;
+   ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-51-20.png)
+   9.长按工程列表的Item,可弹出Fragment,选择删除工程;
+   ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-51-46.png)
 
 
 
