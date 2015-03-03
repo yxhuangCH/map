@@ -9,10 +9,10 @@
   3.地图界面，同时开启后台服务，防止回到退出地图界面时被销毁；
   ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-46-58.png)
     
-   4.点击标点按钮，在屏幕中间弹出选项Spiner,为该点选择相应的属性；
+   4.点击标点按钮，在屏幕中间弹出选项Spinner,为该点选择相应的属性；
    ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-47-33.png)  
    
-   5.弹出Spiner列表，为点选择属性；
+   5.弹出Spinnher列表，为点选择属性；
    ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-47-39.png)  
 
    6.对整个线路工程是否选择；
