@@ -16,7 +16,7 @@
    ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-47-39.png)  
 
    6.对整个线路工程是否选择；
-   ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-47-39.png)  
+   ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-49-02.png)  
 
    7.工程列表自定义ListView;
    ![](https://raw.githubusercontent.com/yxhuangCH/map/master/READMEPICTURE/Screenshot_2015-03-03-11-50-49.png)  
